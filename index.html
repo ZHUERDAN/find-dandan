@@ -203,21 +203,21 @@
     // 结果数据
     const pigResults = [
       {
-        id: "human",
+        id: "human.png",
         name: "人类",
         emoji: "👤",
         description: "检测不出猪元素，是人类吗？",
         analysis: ""
       },
       {
-        id: "pig",
+        id: "pig.png",
         name: "猪",
         emoji: "🐷",
         description: "普通小猪",
         analysis: ""
       },
       {
-        id: "eye",
+        id: "eye.png",
         name: "猪王",
         emoji: "🐷🐷",
         description: "普通小猪王",
@@ -365,7 +365,7 @@
       resultArea.classList.remove('hidden');
       
       // 设置结果内容
-      const imageSrc = `image/${result.id}.png`;
+      const imageSrc = `image/${result.id}`;
       resultEmoji.src = imageSrc;
       resultEmoji.alt = result.name;
       resultTitle.textContent = result.name;
